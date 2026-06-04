@@ -1,0 +1,21 @@
+# Keep the build context small and force a clean, reproducible install.
+.git
+.github
+.vscode
+.idea
+**/node_modules
+**/.cache
+**/public
+**/dist
+**/build
+**/coverage
+# Yarn download/extraction caches (re-fetched during `yarn install`); the
+# release binary + plugins under .yarn/ are NOT ignored — the build needs them.
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+*.log
+*.tsbuildinfo
+.DS_Store
+Dockerfile
+.dockerignore
